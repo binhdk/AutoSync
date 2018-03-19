@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="@dimen/activity_margin"
+    android:orientation="vertical"
+    tools:context="com.binh.syncservice.MainActivity">
+
+
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/textInputLayoutUrl"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <android.support.design.widget.TextInputEditText
+            android:id="@+id/etUrl"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/main_hint_enter_url" />
+    </android.support.design.widget.TextInputLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/activity_margin"
+        android:text="@string/main_label_select_interval_time" />
+
+    <Spinner
+        style="@style/spinnerStyle"
+        android:layout_marginStart="@dimen/activity_margin"
+        android:id="@+id/spinnerInterval"
+        android:layout_width="wrap_content"
+        android:spinnerMode="dropdown"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/activity_margin"
+        android:text="@string/main_label_select_sim_card" />
+
+    <Spinner
+        android:spinnerMode="dropdown"
+        android:layout_marginStart="@dimen/activity_margin"
+        android:id="@+id/spinnerSimSelected"
+        android:layout_width="wrap_content"
+        style="@style/spinnerStyle"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/activity_margin"
+        android:text="@string/main_hint_phone_number" />
+
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/textInputLayoutPhone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <android.support.design.widget.TextInputEditText
+            android:id="@+id/etPhoneNumber"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawableEnd="@drawable/ic_select_contact"
+            android:hint="@string/main_hint_phone_number_receive"
+            android:inputType="phone"
+            android:maxLength="11" />
+    </android.support.design.widget.TextInputLayout>
+
+    <Button
+        android:id="@+id/btnSetAlarm"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/activity_margin"
+        android:background="@android:color/holo_blue_dark"
+        android:text="@string/main_label_enable_alarm"
+        android:textColor="@android:color/white" />
+
+    <Button
+        android:id="@+id/btnStopAlarm"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/activity_margin"
+        android:background="@android:color/holo_red_dark"
+        android:text="@string/main_label_disable_alarm"
+        android:textColor="@android:color/white" />
+</LinearLayout>

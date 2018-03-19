@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">SyncService</string>
+    <string name="main_hint_enter_url">Enter webservice url</string>
+    <string name="main_label_enable_alarm">Enable auto sync webservice</string>
+    <string name="main_label_disable_alarm">Disable current sync</string>
+    <string name="main_label_select_interval_time">Select interval time to sync:</string>
+    <string name="main_label_select_sim_card">Select SIM card to send message:</string>
+    <string name="main_hint_phone_number">Enter phone number receive message:</string>
+    <string name="main_hint_phone_number_receive">Ex: 0906123543</string>
+    <string-array name="array_interval">
+        <item>15 minutes</item>
+        <item>30 minutes</item>
+        <item>1 hour</item>
+        <item>1 day</item>
+    </string-array>
+</resources>
